@@ -2,7 +2,7 @@
   "name": "store",
   "version": "0.1.0",
   "private": true,
-  "homepage":  "BentiPab.github.io/minimalstore",
+  "homepage":  "http://bentipab.github.io/minimalstore",
   "dependencies": {
     "@apollo/client": "^3.4.7",
     "@apollo/react-components": "^4.0.0",
