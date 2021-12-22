@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/minimalstore/static/css/main.ec357fdd.chunk.css",
+    "main.js": "/minimalstore/static/js/main.7c056526.chunk.js",
+    "main.js.map": "/minimalstore/static/js/main.7c056526.chunk.js.map",
+    "runtime-main.js": "/minimalstore/static/js/runtime-main.338f9938.js",
+    "runtime-main.js.map": "/minimalstore/static/js/runtime-main.338f9938.js.map",
+    "static/js/2.5cd14548.chunk.js": "/minimalstore/static/js/2.5cd14548.chunk.js",
+    "static/js/2.5cd14548.chunk.js.map": "/minimalstore/static/js/2.5cd14548.chunk.js.map",
+    "static/js/3.09adf5f2.chunk.js": "/minimalstore/static/js/3.09adf5f2.chunk.js",
+    "static/js/3.09adf5f2.chunk.js.map": "/minimalstore/static/js/3.09adf5f2.chunk.js.map",
+    "index.html": "/minimalstore/index.html",
+    "static/css/main.ec357fdd.chunk.css.map": "/minimalstore/static/css/main.ec357fdd.chunk.css.map",
+    "static/js/2.5cd14548.chunk.js.LICENSE.txt": "/minimalstore/static/js/2.5cd14548.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.338f9938.js",
+    "static/js/2.5cd14548.chunk.js",
+    "static/css/main.ec357fdd.chunk.css",
+    "static/js/main.7c056526.chunk.js"
+  ]
+}
