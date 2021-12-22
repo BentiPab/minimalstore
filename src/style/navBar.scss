@@ -1,0 +1,151 @@
+header {
+  width: 100vw;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  min-width: 100%;
+  font-size: 1rem;
+}
+
+.App-logo {
+  max-width: 40px;
+  width: 100%;
+}
+
+.navItems {
+  display: none;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+}
+
+.burger-active {
+  .line-1 {
+    transform: rotate(45deg) translate(-1px, 8px);
+  }
+  .line-2 {
+    display: none;
+  }
+  .line-3 {
+    transform: rotate(315deg) translate(-3px, -8px);
+  }
+}
+
+.navbar-active {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  height: 25vh;
+  left: -16px;
+  top: 80px;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.navActions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 10px;
+  }
+}
+
+.navItems a,
+.navActions a {
+  text-transform: uppercase;
+  color: black;
+}
+
+.active {
+  color: #5ece7b !important;
+  font-weight: bold;
+  padding-right: 15px;
+  border-right: #5ece7b 2px solid;
+}
+
+.nav-toggler {
+  position: relative;
+  top: 0;
+}
+
+.cart-logo {
+  display: inline-block;
+  position: relative;
+  background: url(../empty-cart.png) no-repeat;
+  cursor: pointer;
+  max-width: 20px;
+  max-height: 20px;
+  width: 20px;
+  background-position: center;
+  background-size: 100%;
+}
+
+.dropdown {
+  display: inline-block;
+  background: url(../dropdown.png) no-repeat;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+
+.dropdown-active {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .navItems,
+  .navActions {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .navItems div:first-of-type {
+    display: inherit;
+  }
+
+  .navItems {
+    justify-content: flex-start;
+  }
+
+  .navActions {
+    justify-content: flex-end;
+  }
+
+  .navItems li,
+  .navActions li {
+    margin-left: 2rem;
+  }
+
+  .active {
+    padding-bottom: 15px;
+    border-bottom: #5ece7b 2px solid;
+    border-right: none;
+    padding-right: 0;
+  }
+}

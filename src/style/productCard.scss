@@ -1,0 +1,111 @@
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "img nameprice";
+  padding: 5px;
+  position: relative;
+  width: 100vw;
+  align-items: center;
+  border-top: 1px solid #a8acb0;
+  margin-bottom: 10px;
+}
+
+.product-card img {
+  grid-area: img;
+  width: 100%;
+  max-height: 150px;
+}
+.product-card div {
+  grid-area: nameprice;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: auto;
+  grid-template-areas:
+    "name"
+    "brand"
+    "price";
+}
+
+.product-card .product-name {
+  grid-area: name;
+}
+.product-card .product-brand {
+  grid-area: brand;
+}
+.product-card .product-price {
+  font-weight: bold;
+  grid-area: price;
+}
+
+.product-card p {
+  line-height: 28.8px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.no-stock {
+  opacity: 0.5;
+}
+
+.no-stock h1 {
+  grid-area: img;
+  z-index: 9999;
+  text-align: center;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-card {
+    display: flex;
+    padding: 16px;
+    flex-flow: column nowrap;
+    width: 100%;
+    min-height: 100%;
+    border: none;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .product-card p {
+    text-align: left;
+  }
+
+  .product-card img {
+    height: 100%;
+    max-height: 354px;
+    width: 100%;
+    max-width: 330px;
+    align-self: center;
+  }
+
+  .no-stock h1 {
+    position: absolute;
+    line-height: 38.4px;
+    font-size: 24px;
+    width: 173px;
+    top: 206px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .product-card:hover {
+    box-shadow: 0 4px 35px 0 #a8acb0;
+  }
+
+  .product-card button {
+    border: none;
+    cursor: pointer;
+  }
+
+  .no-stock h1 {
+    line-height: 38.4px;
+    font-size: 24px;
+    width: 173px;
+    left: 90px;
+    top: 151px;
+  }
+}

@@ -1,0 +1,33 @@
+.show-currencies {
+  display: inline;
+  position: absolute;
+  top: 60px;
+  left: 72vw;
+  padding: 4px 4px;
+  z-index: 9999999;
+  background-color: white;
+  box-shadow: 0 4px 5px 0 #a8acb0;
+
+  li {
+    cursor: pointer;
+    margin-top: 0.5vh;
+    margin-left: 0;
+
+    align-items: center;
+    &:hover {
+      background-color: #6666;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .show-currencies {
+    left: 77vw;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .show-currencies {
+    left: 79vw;
+  }
+}
